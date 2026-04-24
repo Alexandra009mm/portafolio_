@@ -1,6 +1,6 @@
 // VARIABLES
-$color-principal: #1b1ebd;
-$color-secundario: #0885c4bf;
+$color-principal: #2d2e83;
+$color-secundario: #6c63ff;
 $color-fondo: #f5f7fa;
 $color-blanco: #ffffff;
 $color-texto: #333;
@@ -35,22 +35,26 @@ header {
             color: $color-blanco;
             font-size: 1.8rem;
             font-weight: bold;
+
+            span {
+                color: $color-secundario;
+            }
         }
 
         .menu_hero {
             display: flex;
+            gap: 1rem;
             list-style: none;
-            flex-direction: column;
 
             a {
                 text-decoration: none;
                 color: $color-blanco;
-                &:hover{
-                    color: #333;
-                    font-size: 18px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $color-secundario;
                 }
             }
-
         }
     }
 }
@@ -59,7 +63,7 @@ header {
 .hero {
     text-align: center;
     padding: 5rem 2rem;
-    background-color: $color-secundario;
+    background: linear-gradient(135deg, $color-principal, $color-secundario);
     color: $color-blanco;
 
     h1 {
@@ -111,15 +115,22 @@ h2, h3 {
     figure {
         background: $color-blanco;
         border-radius: 10px;
+        overflow: hidden;
         text-align: center;
+        box-shadow: $sombra;
         transition: transform 0.3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
         img {
             width: 100%;
             height: 180px;
             object-fit: cover;
         }
 
-        h5 {
+        figcaption {
             padding: 1rem;
             font-weight: bold;
         }
@@ -127,47 +138,44 @@ h2, h3 {
 }
 
 // FORMULARIO
+.formulario-contacto {
+    background: $color-blanco;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: $sombra;
+    max-width: 600px;
+    margin: auto;
 
-.contact-card{
+    .campo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
 
-    h3{
-        text-align: left;
-    }
-    .formulario-contacto {
-        background: $color-blanco;
-        padding: 2rem;
-        border-radius: 10px;
-        border: 2px solid blue;
-        margin: 50px;
-
-        .campo {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 1rem;
-
-            label {
-                margin-bottom: 0.5rem;
-                font-weight: bold;
-                border-bottom: 2px solid blue;
-            }
-
-            input,
-            textarea {
-                padding: 0.8rem;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-            }
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
         }
 
-        .btn-enviar {
-            width: 100%;
-            padding: 1rem;
-            border: none;
-            background: $color-principal;
-            color: $color-blanco;
+        input,
+        textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
             border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
+        }
+    }
+
+    .btn-enviar {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        background: $color-principal;
+        color: $color-blanco;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: $color-secundario;
         }
     }
 }
@@ -186,6 +194,10 @@ footer {
             color: $color-blanco;
             margin: 0 10px;
             text-decoration: none;
+
+            &:hover {
+                color: $color-secundario;
+            }
         }
     }
 }
