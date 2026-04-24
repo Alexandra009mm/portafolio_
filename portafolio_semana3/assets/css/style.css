@@ -25,6 +25,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Estilos globales del portafolio */
 body {
   font-family: var(--fuente-principal);
   background:
@@ -57,6 +58,7 @@ textarea {
 }
 
 /* Header */
+/* Header con logo, enlaces y boton hamburguesa */
 header {
   position: sticky;
   top: 0;
@@ -133,6 +135,7 @@ header {
 }
 
 /* Hero */
+/* Hero principal con el mensaje de presentacion */
 .hero {
   position: relative;
   text-align: center;
@@ -200,6 +203,7 @@ header {
 }
 
 /* Secciones */
+/* Contenedores principales del contenido */
 .entrenamiento,
 .galeria_habilidades,
 .contact-card {
@@ -227,6 +231,7 @@ h3 {
 }
 
 /* Entrenamiento */
+/* Grid para el bloque de entrenamiento */
 .grid_p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -265,6 +270,7 @@ h3 {
 }
 
 /* Galeria */
+/* Galerias reutilizadas para proyectos y habilidades */
 .grupo_habilidad + .grupo_habilidad {
   margin-top: 3.5rem;
 }
@@ -309,6 +315,7 @@ h3 {
 }
 
 /* Contacto */
+/* Formulario de contacto */
 .contact-card h3 {
   text-align: left;
   margin-bottom: 1.4rem;
@@ -394,6 +401,7 @@ h3 {
 }
 
 /* Footer */
+/* Footer con enlaces secundarios */
 footer {
   background: linear-gradient(135deg, #10174f, var(--color-principal));
   color: rgba(255, 255, 255, 0.9);

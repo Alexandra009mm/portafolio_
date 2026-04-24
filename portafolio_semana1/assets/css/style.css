@@ -1,9 +1,11 @@
+/* Reset base para evitar estilos distintos entre navegadores */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales de la pagina */
 body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
@@ -11,6 +13,7 @@ body {
   line-height: 1.6;
 }
 
+/* Encabezado y menu principal */
 header {
   background: #1b1ebd;
   padding: 1rem 2rem;
@@ -35,6 +38,7 @@ header .nav_principal .menu_hero a {
   color: #ffffff;
 }
 
+/* Hero con el mensaje principal del portafolio */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -50,6 +54,7 @@ header .nav_principal .menu_hero a {
   margin: auto;
 }
 
+/* Secciones internas reutilizando el mismo espaciado */
 .entrenamiento,
 .galeria_habilidades,
 .contact-card {
@@ -64,6 +69,7 @@ h2, h3 {
   color: #1b1ebd;
 }
 
+/* Grids para los bloques de texto y la galeria */
 .grid_p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -97,6 +103,7 @@ h2, h3 {
   font-weight: bold;
 }
 
+/* Formulario de contacto */
 .contact-card h3 {
   text-align: left;
 }
@@ -134,6 +141,7 @@ h2, h3 {
   transition: 0.3s;
 }
 
+/* Pie de pagina con enlaces secundarios */
 footer {
   background: #1b1ebd;
   color: #ffffff;

@@ -1,9 +1,11 @@
+/* Reset base para el sitio de mascotas */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Estilos globales del proyecto */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -25,6 +27,7 @@ a {
   min-height: 100vh;
 }
 
+/* Header con logo y menu de navegacion */
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -54,6 +57,7 @@ main .main-content {
   margin: 0 auto;
   padding: 24px 0 40px;
 }
+/* Hero principal con imagen de portada */
 main .hero-carousel {
   position: relative;
   margin-bottom: 30px;
@@ -97,6 +101,7 @@ main .chain-container {
   gap: 24px;
   margin-bottom: 30px;
 }
+/* Tarjetas informativas y secciones de contenido */
 main .info-block,
 main .services-article,
 main .video-section,
@@ -128,6 +133,7 @@ main .contact-section h2 {
   margin-bottom: 10px;
   color: #2c6e49;
 }
+/* Grids reutilizadas para servicios, galeria y beneficios */
 main .services-grid,
 main .grid-view,
 main .benefits-grid {
@@ -223,6 +229,7 @@ img * {
   border-radius: 8px;
 }
 
+/* Ajustes para pantallas medianas y pequenas */
 @media (max-width: 768px) {
   .main-header {
     justify-content: center;

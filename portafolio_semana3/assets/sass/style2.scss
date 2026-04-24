@@ -83,7 +83,7 @@ body {
     
 
     .hero-overlay {
-        @include center-overlay; // Asumiendo que centra contenido
+        @include center-overlay; //centra contenido
         position: absolute;
         z-index: 2;
         text-align: center;
