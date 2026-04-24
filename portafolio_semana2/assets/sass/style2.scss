@@ -1,0 +1,297 @@
+$primary-color: #2c6e49;
+$text-color: #333;
+$background-color: #f7f7f7;
+$white: #fff;
+$light-gray: #fafafa;
+$border-color: #ddd;
+$card-border: #e4e4e4;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  min-height: 100vh;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px 24px;
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+
+    .logo {
+        font-size: 2rem;
+        color: $primary-color;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 18px;
+        list-style: none;
+
+        a {
+        font-weight: bold;
+        color: $text-color;
+        }
+    }
+}
+
+main{
+    .main-content {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 24px 0 40px;
+    }
+
+    .hero-carousel {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #000;
+    border-radius: 14px;
+
+    img {
+        width: 100%;
+        height: 420px;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: $white;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.45);
+
+        h2 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+        }
+
+        p {
+        max-width: 650px;
+        margin-bottom: 18px;
+        }
+    }
+    }
+
+    .btn-primary,
+    .boton-hero {
+    display: inline-block;
+    padding: 10px 18px;
+    color: $white;
+    background-color: $primary-color;
+    }
+
+    .chain-container {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 30px;
+    }
+
+    .info-block,
+    .services-article,
+    .video-section,
+    .contact-section,
+    .category,
+    .benefit-item {
+    padding: 20px;
+    border-radius: 8px;
+    }
+
+    .info-block {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 18px;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .info-text {
+        h3 {
+        margin-bottom: 10px;
+        color: $primary-color;
+        }
+    }
+    }
+
+    .section-title,
+    .category h3,
+    .contact-section h2 {
+    margin-bottom: 10px;
+    color: $primary-color;
+    }
+
+    .services-grid,
+    .grid-view,
+    .benefits-grid {
+    display: grid;
+    gap: 8px;
+    }
+
+    .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .service-card {
+    background-color: $light-gray;
+    border: 1px solid $card-border;
+    border-radius: 10px;
+
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 14px;
+    }
+    }
+
+    .video-section {
+    position: relative;
+    min-height: 280px;
+    padding: 0;
+
+    .video-bg {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .video-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: $white;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.35);
+    }
+    }
+
+    .pets-gallery {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 30px;
+    }
+
+    .grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin-top: 16px;
+
+    figure {
+        text-align: center;
+        background-color: $light-gray;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+    }
+
+    figcaption {
+        padding: 12px;
+        font-weight: bold;
+    }
+    }
+
+    .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin-bottom: 30px;
+    }
+
+    .benefit-item {
+    h4 {
+        margin-bottom: 8px;
+        color: $primary-color;
+    }
+    }
+
+    .contact-section {
+    text-align: center;
+
+    .contact-info {
+        p {
+        margin-bottom: 8px;
+        }
+    }
+    }
+}
+footer.main-footer {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 28px 55px;
+border-top: 1px solid;
+}
+
+img *{
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    justify-content: center;
+    text-align: center;
+
+    .nav-list {
+      justify-content: center;
+    }
+  }
+
+  .hero-carousel {
+    img {
+      height: 300px;
+    }
+
+    .hero-overlay {
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .info-block {
+    grid-template-columns: 1fr;
+  }
+}
